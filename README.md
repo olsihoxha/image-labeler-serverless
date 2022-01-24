@@ -26,13 +26,11 @@ After deployment is successful, you can check the setup details using sls info .
 
 Example,
 
-`curl -X POST \`
- ` https:// xxxxxxxxxxxx.amazonaws.com/dev/getImagesByLabel \`
- 
-  `-H 'Content-Type: application/json' \`
-  
- ` -H 'Postman-Token: f769a23f-d285-4aba-9fc1-f3d8dd4b9f33' \`
- 
-  `-H 'cache-control: no-cache' \`
-  
- ` -d '{"label":"Furniture"}'`
+```
+curl -X POST \
+  https:// xxxxxxxxxxxx.amazonaws.com/dev/getImagesByLabel \
+   -H 'Content-Type: application/json' \
+   -H 'Postman-Token: f769a23f-d285-4aba-9fc1-f3d8dd4b9f33' \
+   -H 'cache-control: no-cache' \
+   -d '{"label":"Furniture"}'
+```
